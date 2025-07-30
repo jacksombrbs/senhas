@@ -37,6 +37,7 @@ const simbolos = '!@%*?';
 geraSenha();
 
 function geraSenha() {
+
     let alfabeto = '';
     if (checkbox[0].checked) {
         alfabeto = alfabeto + letrasMaiusculas;
@@ -51,6 +52,7 @@ function geraSenha() {
         alfabeto = alfabeto + simbolos;
     }
     console.log(alfabeto);
+  
     let senha = '';
     for (let i = 0; i < tamanhoSenha; i++) {
         let numeroAleatorio = Math.random() * alfabeto.length;
